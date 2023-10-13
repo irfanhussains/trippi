@@ -1,6 +1,10 @@
 /*Custom CSS File, overwrite with caution*/
 body{
     font-family:Arial, Helvetica, sans-serif;
+    background-image: url(../images/bodyBg.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 @media (min-width: 1400px){
     .container {
@@ -152,4 +156,377 @@ body{
     font-weight: 700;
     text-decoration: none;
     line-height: 2.15rem;
+}
+.categories{
+    margin-top:20rem;
+}
+.categories h4{
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 7.54px;
+    text-transform: uppercase;
+}
+.categories h1{
+    font-size: 53px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 65px; 
+}
+.small-mascot{
+    position:absolute;
+    right:0;
+    top:0;
+}
+.categories .vr{
+    background:none;
+    margin-top:7rem;
+}
+.roundedRadial{
+    border-radius: 876px;
+    background: radial-gradient(90.37% 90.37% at 31.39% 35.84%, #FFF 0%, #ADADD0 100%);
+    min-height:886px;
+    padding: 12rem;
+}
+.roundedRadial h4{
+    color: #020202;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 7.54px;
+    text-transform: uppercase;
+}
+.roundedRadial h1{
+    font-size:50px;
+    font-weight: bold;
+}
+.roundedRadial .blackButton{
+    display: inline-block;
+    border: none;
+    padding: 0.5rem 2rem;
+}
+.paperPlane{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.bookingImage{
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    left: -9rem;
+}
+.hotels .container{
+    background-image: url(../images/elipse_bg.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 15rem;
+
+}
+.hotels h4{
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 7.54px;
+    text-transform: uppercase;
+}
+.hotels h1{
+    font-size: 53px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 65px; 
+}
+.hotels .box{
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 11px 74px 0px rgba(0, 0, 0, 0.03);
+    margin-top: -10rem;
+    padding: 12rem 3rem 1rem 3rem;
+}
+.hotels .box h1{
+    color: #000;
+       font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px; /* 106.25% */
+}
+.hotels .box .d-flex p{
+    color: #050450;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px; /* 62.963% */
+    letter-spacing: -1.62px;
+}
+.hotels .box p{
+    color: #000;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px; /* 178.947% */
+    opacity: 0.6;
+}
+.hotels .box-image{
+    border-radius: 133px;
+    max-height:266px;
+    overflow: hidden;
+    transform: rotate(-8.95deg);
+    transition: all 0.5s;
+    margin-top: 2rem;
+    position: relative;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    /* Show 4th slide on md if col-md-4*/
+    .carousel-inner .active.col-lg-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    /* Show 3rd slide on sm if col-sm-6*/
+    .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -50%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+}
+@media (min-width: 576px) {
+    .carousel-item {
+        margin-right: 0;
+    }
+    /* show 2 items */
+    .carousel-inner .active + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+        transition: none;
+    }
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* farthest right hidden item must be also positioned for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+/* MD */
+@media (min-width: 768px) {
+    /* show 3rd of 3 item slide */
+    .carousel-inner .active + .carousel-item + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+/* LG */
+@media (min-width: 991px) {
+    /* show 4th item */
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    /* Show 5th slide on lg if col-lg-3 */
+    .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* left or forward direction */
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction //t - previous slide direction last item animation fix */
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+
+.carousel-control-next, .carousel-control-prev{
+    position: relative;
+    width:auto;
+}
+.hotels .carousel-item{
+    margin-top:0rem;
+}
+.hotels .carousel-item:hover{
+    margin-top:2rem;
+}
+.hotels .carousel-item:hover .box-image{
+    transform: rotate(11.855deg);
+    transition: all 0.5s;
+}
+.events{
+    background-image: url(../images/eventBg.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 15rem;
+
+}
+.events .container{
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 25px 64px 0px rgba(0, 0, 0, 0.09);
+}
+.events h4{
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 7.54px;
+    text-transform: uppercase;
+}
+.events h1{
+    font-size: 53px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 65px; 
+}
+.events .box-image{
+    border-radius: 20px;
+    max-height:275px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 2rem;
+    position: relative;
+    width: 100%;
+}
+.events .box p{
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 31px; /* 140.909% */
+}
+.testimonials{
+    background-image: url(../images/testimonialBG.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+.testimonials h4{
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 7.54px;
+    text-transform: uppercase;
+}
+.testimonials h1{
+    font-size: 53px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 65px; 
+}
+.testimonials .box{
+    border-radius:9px;
+    background:#fff;
+    max-width: 480px;
+}
+
+.testimonialImage{
+    width: 71px;
+    height: 71px;
+    overflow: hidden;
+    border-radius: 71px;
+}
+.testimonials .desc{
+    color: #2B2B2B;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 157.895% */
+}
+.testimonials .name{
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.78px;
+}
+.testimonials .job{
+    color: #1F1F1F;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 157.895% */   
+}
+.testimonials .colorBlue{
+    background:#050450
+}
+.testimonials .colorBlue p, .testimonials .colorBlue desc, .testimonials .colorBlue .job{
+    color: #fff;
+}
+.testimonials .colorGrey{
+    background: #EAEAF3;
+}
+footer{
+    background:url(../images/footerBg.png) no-repeat;
+    background-size:100%;
+    background-position:top;
+    color: #fff;
+    padding-top: 18rem;
+    
+}
+footer ul, footer li{
+    list-style-type: none;
+    padding:0;
+    margin:0;
 }
